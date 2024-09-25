@@ -5,7 +5,7 @@
 class Board
 {
 public:
-    Board(std::string& ssid, std::string& passwd);
+    Board(char* ssid, char* passwd);
     ~Board();
 
     bool WifiInit();
@@ -13,6 +13,6 @@ public:
     void LEDSetting();
 
 private:
-    std::string _ssid;
-    std::string _passwd;
+    char* _ssid;
+    char* _passwd;
 };
